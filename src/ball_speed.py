@@ -31,8 +31,8 @@ if __name__ == '__main__':
         bs = ball_speed()
         tw = Twist()
         while(True):
-            tw.linear.x = bs.difx*60
-            tw.linear.y = bs.dify*60
+            tw.linear.x = bs.dif_x*60
+            tw.linear.y = bs.dif_y*60
             rate.sleep()
 
     except rospy.ROSInterruptException: pass
